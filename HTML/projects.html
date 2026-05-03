@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desie's Projects</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #projects .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(280px, 1fr));
+      gap: 130px 60px;
+      max-width: 932px;
+      margin: 0 auto 40px auto;
+      align-items: start;
+    }
+
+    #projects .back-btn {
+      position: absolute;
+      top: 120px;
+      left: 140px;
+      z-index: 10;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;}
+
+    #projects .projects-grid .project-item {
+      width: 100%;
+      margin: 0;
+    }
+
+    #projects .projects-grid .project-item:nth-child(10) {
+      grid-column: 1 / 2;
+      margin-top: 130px; 
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 900px) {
+      #projects .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      #projects .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+<section id="projects" class="projects-section">
+    <a id="backBtn" href="index.html#home" class="back-btn">
+      <svg width="56" height="28" viewBox="0 0 56 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M52.8522 11.3564L52.9396 11.368H15.4669L27.247 4.26099C27.8238 3.91402 28.1402 3.44399 28.1402 2.95066C28.1402 2.45733 27.8238 1.99058 27.247 1.64279L25.414 0.538825C24.8376 0.19185 24.0695 0 23.2505 0C22.431 0 21.6624 0.19048 21.0861 0.537455L0.892825 12.6923C0.314158 13.0406 -0.00226422 13.5046 1.21977e-05 13.9982C-0.00226422 14.4946 0.314158 14.9588 0.892825 15.3066L21.0861 27.4625C21.6624 27.8092 22.4305 28 23.2505 28C24.0695 28 24.8376 27.809 25.414 27.4625L27.247 26.3586C27.8238 26.0122 28.1402 25.5495 28.1402 25.0562C28.1402 24.5631 27.8238 24.1249 27.247 23.7782L15.334 16.6315H52.8941C54.5818 16.6315 56 15.7558 56 14.7404V13.179C56 12.1636 54.5399 11.3564 52.8522 11.3564Z" fill="#10247E"/>
+</svg>
+    </a>
+  <h1>My Projects</h1>
+
+<div class="projects-grid">
+<div class="project-item">
+      <div class="project-image-wrapper">
+        <img src="smarthome.png" alt="IoT Smart Home Prototype">
+        <div class="project-hover">
+          <h3 class="hover-title">IoT Smart Home Prototype</h3>
+          <p class="hover-desc">Built in Packet Tracer to simulate smart appliances connected via VLANs.</p>
+        </div>
+      </div>
+      <div class="project-caption">Project 1</div>
+    </div>
+    <div class="project-item">
+      <div class="project-image-wrapper">
+        <img src="wireframing.png" alt="Wireframing">
+        <div class="project-hover">
+          <h3 class="hover-title">Wireframe Sketches</h3>
+          <p class="hover-desc">Hand-drawn layouts illustrating early design concepts for a website, showing placeholders for images, text blocks, and buttons.</p>
+        </div>
+      </div>
+      <div class="project-caption">Project 2</div>
+    </div>
+    <div class="project-item">
+      <div class="project-image-wrapper">
+        <img src="website.png" alt="Python Coding">
+        <div class="project-hover">
+          <h3 class="hover-title">Multimedia Systems Website</h3>
+          <p class="hover-desc">Developed a responsive HTML/CSS site with embedded graphics and animations.</p>
+        </div>
+      </div>
+      <div class="project-caption">Project 3</div>
+    </div>
+    <div class="project-item">
+      <div class="project-image-wrapper">
+        <img src="vlan trunking.png" alt="VLAN & Trunking">
+        <div class="project-hover">
+          <h3 class="hover-title">Network Trunking Lab</h3>
+          <p class="hover-desc">Configured VLANs and trunking in Packet Tracer, troubleshooting native VLAN mismatches.</p>
+        </div>
+      </div>
+      <div class="project-caption">Project 4</div>
+    </div>
+    <div class="project-item">
+      <div class="project-image-wrapper">
+        <img src="collaboration.jpg" alt="Collaboration">
+        <div class="project-hover">
+          <h3 class="hover-title">Collaboration & Teaching Workshop</h3>
+          <p class="hover-desc">Led a peer session on network setup, using diagrams and live troubleshooting.</p>
+        </div>
+      </div>
+      <div class="project-caption">Project 5</div>
+    </div>
+    <div class="project-item">
+      <div class="project-image-wrapper">
+        <img src="figma.png" alt="UI Design">
+        <div class="project-hover">
+          <h3 class="hover-title">Figma Design Components Board</h3>
+          <p class="hover-desc">Organized multiple artboards in Figma to showcase color palettes, typography samples, and layout previews.</p>
+        </div>
+      </div>
+      <div class="project-caption">Project 6</div>
+    </div>
+    <div class="project-item">
+      <div class="project-image-wrapper">
+        <img src="data visualizer python.png" alt="Python Coding">
+        <div class="project-hover">
+          <h3 class="hover-title">Python Data Visualizer</h3>
+          <p class="hover-desc">Built a Python script to visualize student performance data with charts.</p>
+        </div>
+      </div>
+      <div class="project-caption">Project 7</div>
+    </div>
+    <div class="project-item">
+      <div class="project-image-wrapper">
+        <img src="theme switcher.png" alt="Wireframing">
+        <div class="project-hover">
+          <h3 class="hover-title">Interactive SVG Theme Switcher</h3>
+          <p class="hover-desc">Designed a split light/dark mode interface with circuit-style wave dividers, glowing nodes, and a central toggle switch.</p>
+        </div>
+      </div>
+      <div class="project-caption">Project 8</div>
+    </div>
+    <div class="project-item">
+      <div class="project-image-wrapper">
+        <img src="c++ calculator.png" alt="Python Coding">
+        <div class="project-hover">
+          <h3 class="hover-title">C++ Grade Calculator CLI</h3>
+          <p class="hover-desc">Built a console app that takes student scores and computes weighted averages, letter grades, and pass/fail status.</p>
+        </div>
+      </div>
+      <div class="project-caption">Project 9</div>
+    </div>
+    <div class="project-item">
+      <div class="project-image-wrapper">
+        <img src="python flashcard.png" alt="Project 10">
+        <div class="project-hover">
+          <h3 class="hover-title">Python Flashcard Generator</h3>
+          <p class="hover-desc">Created a Python script that turns CSV data into interactive flashcards for study review.</p>
+        </div>
+      </div>
+      <div class="project-caption">Project 10</div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  // Get the URL parameter to determine where to go back
+  const params = new URLSearchParams(window.location.search);
+  const from = params.get('from');
+  
+  const backBtn = document.getElementById('backBtn');
+  // If from=home (View My Work button), go back to home section
+  // If from=index or from=projects (View All My Projects), go back to projects section
+  const targetSection = (from === 'home') ? 'home' : 'projects';
+  backBtn.href = 'index.html#' + targetSection;
+
+  backBtn.addEventListener('click',function(e) {
+    e.preventDefault();
+    // Use replace to navigate without smooth scrolling
+    window.location.replace('index.html#' + targetSection);
+  });
+</script>
+
+</body>
+</html>
