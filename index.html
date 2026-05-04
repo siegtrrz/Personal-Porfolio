@@ -12,11 +12,11 @@
 
 <header>
 <nav>
-  <b><a href="#home" class="home">Home</a></b>
-  <a href="#about">About Me</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Reach Out</a>
+  <a href="#home" class="nav-link">Home</a>
+  <a href="#about" class="nav-link">About Me</a>
+  <a href="#skills" class="nav-link">Skills</a>
+  <a href="#projects" class="nav-link">Projects</a>
+  <a href="#contact" class="nav-link">Reach Out</a>
 </nav>
 
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180">
@@ -53,11 +53,19 @@
   </div>
 
   <div class="hero-photo">
-    <img src="Desie.jpg" alt="Profile photo">
-    <button>View My Work</button> 
+    <img src="Desie.png" alt="Profile photo">
+      <button onclick="window.location.href='projects.html?from=home'">View My Work</button> 
   </div>
 </section>
 
+ 
+
+
+
+
+
+
+<!-- ABOUT ME SECTION -->
 <section id="about" class="about-section">
 <div class="about-content">
   <h2>
@@ -68,9 +76,9 @@
   <div class="about-row"> 
 
     <div class="photo-frame">
-      <img src="Desie.jpg" alt="Desie M. Gutierrez" class="about-photo">
+      <img src="Desie.png" alt="Desie M. Gutierrez" class="about-photo">
     </div>
-
+  
     <div class="about-text">
       <p>I'm Desie Gutierrez, a Computer Engineering Technology student passionate about building practical, and creative solutions. Technologically driven and curious about how systems connect, I thrive on solving problems and optimizing workflows. Beyond tech, I love experimenting with playful design overlays and making even low-fidelity wireframes feel alive.</p>
       <p>I aspire to design systems that bridge creativity and technology.</p>
@@ -79,9 +87,16 @@
 </div> 
 </section>
 
+
+
+
+
+
+
+<!-- SKILLS SECTION -->
 <section id="skills" class="skills-section">
   <h2>DESIE’s TOOLBOX</h2>
-  <div class="skills-grid">
+  <div class="skills-grid">               
     <div class="skill-item">
       <div class="skill-bg skill-bg-cpp">
         <img src="c++.jpg" alt="C++ code" class="skill-cpp">
@@ -108,7 +123,7 @@
     </div>
     <div class="skill-item">
       <div class="skill-bg skill-bg-wireframe">
-        <img src="wireframe.jpg" alt="Wireframing" class="skill-wireframe">
+        <img src="wireframe.svg" alt="Wireframing" class="skill-wireframe">
       </div>
       <span class="skill-text-wireframe">Wireframing/<br>Storyboarding</span>
     </div>
@@ -121,5 +136,226 @@
   </div>
 </section>
 
+
+
+
+
+
+
+
+
+<section id="projects" class="projects-section">
+  <h1>My Projects</h1>
+  <div class="projects-grid">
+    <div class="project-item">
+      <div class="project-image-wrapper">
+        <img src="smarthome.png" alt="IoT Smart Home Prototype">
+        <div class="project-hover">
+          <h3 class="hover-title">IoT Smart Home Prototype</h3>
+          <p class="hover-desc">Built in Packet Tracer to simulate smart appliances connected via VLANs.</p>
+        </div>
+      </div>
+      <div class="project-caption">Project 1</div>
+    </div>
+    <div class="project-item">
+      <div class="project-image-wrapper">
+        <img src="wireframing.png" alt="Wireframing">
+        <div class="project-hover">
+          <h3 class="hover-title">Wireframe Sketches</h3>
+          <p class="hover-desc">Hand-drawn layouts illustrating early design concepts for a website, showing placeholders for images, text blocks, and buttons.</p>
+        </div>
+      </div>
+      <div class="project-caption">Project 2</div>
+    </div>
+    <div class="project-item">
+      <div class="project-image-wrapper">
+        <img src="website.png" alt="Python Coding">
+        <div class="project-hover">
+          <h3 class="hover-title">Multimedia Systems Website</h3>
+          <p class="hover-desc">Developed a responsive HTML/CSS site with embedded graphics and animations.</p>
+        </div>
+      </div>
+      <div class="project-caption">Project 3</div>
+    </div>
+    <div class="project-item">
+      <div class="project-image-wrapper">
+        <img src="vlan trunking.png" alt="VLAN & Trunking">
+        <div class="project-hover">
+          <h3 class="hover-title">Network Trunking Lab</h3>
+          <p class="hover-desc">Configured VLANs and trunking in Packet Tracer, troubleshooting native VLAN mismatches.</p>
+        </div>
+      </div>
+      <div class="project-caption">Project 4</div>
+    </div>
+    <div class="project-item">
+      <div class="project-image-wrapper">
+        <img src="collaboration.jpg" alt="Collaboration">
+        <div class="project-hover">
+          <h3 class="hover-title">Collaboration & Teaching Workshop</h3>
+          <p class="hover-desc">Led a peer session on network setup, using diagrams and live troubleshooting.</p>
+        </div>
+      </div>
+      <div class="project-caption">Project 5</div>
+    </div>
+    <div class="project-item">
+      <div class="project-image-wrapper">
+        <img src="figma.png" alt="UI Design">
+        <div class="project-hover">
+          <h3 class="hover-title">Figma Design Components Board</h3>
+          <p class="hover-desc">Organized multiple artboards in Figma to showcase color palettes, typography samples, and layout previews.</p>
+        </div>
+      </div>
+      <div class="project-caption">Project 6</div>
+    </div>
+  </div>
+  <div class="projects-btn-row">
+    <a href="projects.html?from=index" class="projects-btn">View All My Projects</a>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- REACH OUT SECTION -->
+  <section id="contact" class="contact-section">
+    <h2><span style="color:#10247E; font-family:'Georgia',serif; font-weight:900;">Get in Touch</span> with DESIE</h2>
+    <div class="contact-container">
+      <div class="contact-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="message">Your Message:</label>
+        <div class="message-wrapper">
+          <textarea id="message" name="message" rows="7" required></textarea>
+          <div class="form-group">
+            <button type="submit" class="send-btn">
+              <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.4578 2.68645L10.3803 12.9725C10.34 13.1318 10.241 13.274 10.0993 13.3759C9.9577 13.4777 9.7819 13.5332 9.60073 13.5332C9.41956 13.5332 9.24377 13.4777 9.10214 13.3759C8.96051 13.274 8.86146 13.1318 8.8212 12.9725L6.8144 8.2728C6.77451 8.17341 6.71085 8.08315 6.62795 8.00841C6.54505 7.93367 6.44493 7.87628 6.33469 7.84031L2.18518 6.44192L13.5943 2.77294C13.8678 2.67282 14.1667 2.64288 14.4578 2.68645Z" fill="#2CA9BC"/>
+                <path d="M6.67853 8.01429L9.07709 5.85183M14.9296 1.52691L14.4579 2.68743L10.3803 12.9735C10.3401 13.1328 10.241 13.275 10.0994 13.3768C9.95775 13.4787 9.78195 13.5342 9.60078 13.5342C9.41961 13.5342 9.24381 13.4787 9.10219 13.3768C8.96056 13.275 8.8615 13.1328 8.82125 12.9735L6.81445 8.27378C6.77455 8.17439 6.7109 8.08413 6.628 8.00939C6.5451 7.93465 6.44498 7.87726 6.33474 7.84129L2.18523 6.4429L1.12186 6.07528C0.945223 6.03899 0.787492 5.94968 0.674511 5.822C0.561531 5.69431 0.5 5.53582 0.5 5.37248C0.5 5.20915 0.561531 5.05065 0.674511 4.92297C0.787492 4.79528 0.945223 4.70598 1.12186 4.66968L13.8662 0.568216C14.015 0.505285 14.1818 0.48524 14.3437 0.510813C14.5056 0.536385 14.6548 0.60633 14.7711 0.711124C14.8873 0.815917 14.9649 0.950465 14.9933 1.09644C15.0216 1.24242 14.9994 1.39273 14.9296 1.52691Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>send</span>
+            </button>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="socials">Your Socials + Phone (optional)</label>
+            <input type="text" id="socials" name="socials">
+          </div>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="contact-frame">
+          <img src="contact.png" alt="Desie on the phone" class="contact-photo">
+        </div>
+        
+        <div class="contact-links">
+          <a href="email.html" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <svg width="39" height="35" viewBox="0 0 39 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M33.15 0H5.85C2.61913 0 0 2.35051 0 5.25V29.75C0 32.6495 2.61913 35 5.85 35H33.15C36.3809 35 39 32.6495 39 29.75V5.25C39 2.35051 36.3809 0 33.15 0Z" fill="#132684"/>
+              <path d="M29.9386 8.75H9.06141C7.33828 8.75 5.94141 10.0036 5.94141 11.55V23.45C5.94141 24.9964 7.33828 26.25 9.06141 26.25H29.9386C31.6617 26.25 33.0586 24.9964 33.0586 23.45V11.55C33.0586 10.0036 31.6617 8.75 29.9386 8.75Z" fill="white"/>
+              <path d="M33.0586 8.75L20.4902 19.9609C19.957 20.5078 19.043 20.5078 18.5098 19.9609L5.94141 8.75M5.94141 26.25L15.7676 17.5M33.0586 26.25L23.2324 17.5" stroke="#132684"/>
+            </svg>
+            desiegutierrez17@gmail.com
+          </a>
+          <a href="phone.html" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <svg width="37" height="37" viewBox="0 0 37 37" xmlns="http://www.w3.org/2000/svg">
+              <path d="M37 18.5C37 28.7213 28.7213 37 18.5 37C8.27875 37 0 28.7213 0 18.5C0 8.27875 8.27875 0 18.5 0C28.7213 0 37 8.27875 37 18.5Z" fill="url(#paint0_linear_87_67)"/>
+              <path d="M15.1083 26.9789C14.5071 26.9789 14.615 26.7477 14.3992 26.1772L12.6417 20.3806L23.5567 13.5664L24.8362 13.9056L23.7725 16.8039L15.1083 26.9789Z" fill="#C8DAEA"/>
+              <path d="M15.1083 26.9788C15.5708 26.9788 15.7713 26.7629 16.0333 26.5163C16.4342 26.1309 21.5833 21.1204 21.5833 21.1204L18.4229 20.3496L15.4938 22.1996L15.1083 26.8246V26.9788Z" fill="#A9C9DD"/>
+              <path d="M15.4167 22.2618L22.8784 27.7656C23.7263 28.2281 24.3429 27.9968 24.5588 26.9793L27.5959 12.6726C27.9042 11.4239 27.1179 10.8689 26.3009 11.2389L8.47919 18.1147C7.26128 18.6081 7.27669 19.2864 8.26336 19.5793L12.8421 21.0131L23.4334 14.3376C23.9267 14.0293 24.3892 14.1989 24.0192 14.5381L15.4167 22.2618Z" fill="url(#paint1_linear_87_67)"/>
+              <defs>
+                <linearGradient id="paint0_linear_87_67" x1="23.922" y1="5.84754" x2="14.672" y2="27.4306" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#37AEE2"/>
+                  <stop offset="1" stop-color="#1E96C8"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_87_67" x1="19.8861" y1="19.079" x2="23.7403" y2="25.2457" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#EFF7FC"/>
+                  <stop offset="1" stop-color="white"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            +63 9234567388
+          </a>
+          <a href="linkedin.html" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_87_72)">
+                <path d="M0 2.29225C0 1.027 1.05925 0 2.365 0H29.635C30.9413 0 32 1.027 32 2.29225V29.7081C32 30.9737 30.9413 32 29.635 32H2.365C1.05938 32 0 30.9739 0 29.7085V2.29187V2.29225Z" fill="#006699"/>
+                <path d="M9.7245 26.78V12.3735H4.936V26.78H9.725H9.7245ZM7.33125 10.4068C9.00075 10.4068 10.0401 9.30059 10.0401 7.91809C10.0089 6.50409 9.00075 5.42871 7.363 5.42871C5.72412 5.42871 4.65375 6.50409 4.65375 7.91796C4.65375 9.30046 5.69275 10.4067 7.29987 10.4067H7.33087L7.33125 10.4068ZM12.375 26.78H17.1631V18.7356C17.1631 18.3056 17.1944 17.8745 17.3209 17.5673C17.6669 16.7067 18.4547 15.8158 19.7779 15.8158C21.5101 15.8158 22.2035 17.1368 22.2035 19.0737V26.78H26.9915V18.5197C26.9915 14.0948 24.6295 12.0357 21.4791 12.0357C18.8962 12.0357 17.7619 13.4793 17.1316 14.4626H17.1635V12.374H12.3752C12.4377 13.7255 12.3749 26.7805 12.3749 26.7805L12.375 26.78Z" fill="white"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_87_72">
+                  <rect width="32" height="32" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+            linkedin.com/in/desiegutierrez
+          </a>
+          <a href="facebook.html" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <svg width="36" height="35" viewBox="0 0 36 35" xmlns="http://www.w3.org/2000/svg">
+                <path d="M34.0133 35C35.1104 35 36 34.135 36 33.0683V1.93166C36 0.864591 35.1103 0 34.0133 0H1.98686C0.8893 0 0 0.864722 0 1.93166V33.0682C0 34.135 0.8893 34.9999 1.98686 34.9999L34.0133 35Z" fill="#485A96"/>
+                <path d="M24.8394 35V21.4461H29.5188L30.2194 16.1639H24.8393V12.7914C24.8393 11.2621 25.276 10.2199 27.5318 10.2199L30.4088 10.2186V5.49425C29.9112 5.42999 28.2033 5.28613 26.2166 5.28613C22.0684 5.28613 19.2286 7.74772 19.2286 12.2684V16.1639H14.5371V21.4461H19.2286V34.9998L24.8394 35Z" fill="white"/>
+              </path>
+            </svg>
+            facebook.com/siegtrrz
+          </a>
+      </div>
+    </div>
+  </section>
+  <script>
+    const navLinks = document.querySelectorAll('nav a.nav-link');
+    const sections = document.querySelectorAll('section[id]');
+
+    function setActiveLink(hash) {
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === hash);
+      });
+    }
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        setActiveLink(link.getAttribute('href'));
+      });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActiveLink('#' + entry.target.id);
+        }
+      });
+    }, {
+      root: null,
+      rootMargin: '-45% 0px -45% 0px',
+      threshold: 0.1
+    });
+
+    sections.forEach(section => observer.observe(section));
+
+    function updateActiveOnScroll() {
+      let currentHash = '#home';
+      const triggerPoint = window.innerHeight * 0.4;
+      sections.forEach(section => {
+        const top = section.getBoundingClientRect().top;
+        if (top <= triggerPoint) {
+          currentHash = '#' + section.id;
+        }
+      });
+      setActiveLink(currentHash);
+    }
+
+    window.addEventListener('scroll', updateActiveOnScroll, { passive: true });
+    window.addEventListener('load', () => {
+      setActiveLink(location.hash || '#home');
+      updateActiveOnScroll();
+    });
+  </script>
 </body>
 </html>
